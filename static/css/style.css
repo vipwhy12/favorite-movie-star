@@ -1,0 +1,12 @@
+header{
+    text-align: center;
+}
+
+.jumbotron{
+    background-color:#F5D042
+}
+
+.card-link{
+    border: 3px solid  black;
+    border-radius: 2px; 
+}
