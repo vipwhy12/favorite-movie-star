@@ -46,11 +46,11 @@ function deleteStar(name) {
     $.ajax({
         type: "POST",
         url: "/api/delete",
-        data: {},
+        data: {'name_give' : name},
         success: function (response) {
             if (response["result"] == "success") {
                 // 2. '좋아요 완료!' 얼럿을 띄웁니다.
-                alert('좋아요 완료!')
+                alert('삭제 완료!')
                 // 3. 변경된 정보를 반영하기 위해 새로고침합니다.
                 window.location.reload()
             }
